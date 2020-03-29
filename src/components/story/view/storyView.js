@@ -68,6 +68,7 @@ class StoryListView extends Component {
             footerComponent={footerComponent}
             selectedStory={selectedStory}
             stories={orderedStories}
+            isOpen={isModalOpen}
           />
         </Modal>
       </Fragment>

@@ -107,12 +107,16 @@ export default class Stories extends PureComponent {
               style={StyleSheet.absoluteFill}
               key={story.id}
             >
-              <StoryItem
-                footerComponent={footerComponent}
-                handleSelectedStoryOnLoaded={this._handleSelectedStoryOnLoaded}
-                selectedStory={selectedStory}
-                {...{ story }}
-              />
+              {this.props.isOpen && (
+                <StoryItem
+                  footerComponent={footerComponent}
+                  handleSelectedStoryOnLoaded={
+                    this._handleSelectedStoryOnLoaded
+                  }
+                  selectedStory={selectedStory}
+                  {...{ story }}
+                />
+              )}
             </Animated.View>
           ))
           .reverse()}
