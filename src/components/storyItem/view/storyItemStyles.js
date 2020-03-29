@@ -2,11 +2,6 @@ import { StyleSheet, Platform } from "react-native";
 import { Dimensions } from "react-native";
 
 export default StyleSheet.create({
-  mainContainer: {
-    flex: 1,
-    flexDirection: "column",
-    justifyContent: "flex-end"
-  },
   container: {
     flex: 1
   },

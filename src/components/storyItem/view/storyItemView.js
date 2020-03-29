@@ -15,7 +15,7 @@ export default class extends PureComponent {
       footerComponent
     } = this.props;
     return (
-      <View style={styles.mainContainer}>
+      <Fragment>
         <View style={styles.container}>
           <Image
             onLoad={() =>
@@ -31,7 +31,7 @@ export default class extends PureComponent {
         {footerComponent && (
           <View style={styles.footer}>{footerComponent}</View>
         )}
-      </View>
+      </Fragment>
     );
   }
 }

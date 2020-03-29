@@ -86,7 +86,9 @@ export default class Stories extends PureComponent {
     const { stories, selectedStory, footerComponent } = this.props;
 
     return (
-      <View style={styles.container}>
+      <View
+        style={[styles.container, { height: this.props.isOpen ? "100%" : 50 }]}
+      >
         {!ready && (
           <View
             style={{
