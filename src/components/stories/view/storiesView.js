@@ -87,7 +87,10 @@ export default class Stories extends PureComponent {
 
     return (
       <View
-        style={[styles.container, { height: this.props.isOpen ? "100%" : 50 }]}
+        style={[
+          styles.container,
+          { height: this.props.isOpen ? Dimensions.get("window").height : 50 }
+        ]}
       >
         {!ready && (
           <View
