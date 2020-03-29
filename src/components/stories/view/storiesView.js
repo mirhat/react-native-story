@@ -20,7 +20,7 @@ export default class Stories extends PureComponent {
 
   state = {
     x: new Animated.Value(0),
-    ready: false
+    ready: true
   };
 
   constructor(props) {
