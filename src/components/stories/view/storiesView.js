@@ -5,7 +5,8 @@ import {
   Dimensions,
   Platform,
   View,
-  ActivityIndicator
+  ActivityIndicator,
+  Text
 } from "react-native";
 import styles from "./storiesStyles";
 import { StoryItem } from "../../";
