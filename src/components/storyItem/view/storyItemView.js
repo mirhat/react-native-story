@@ -17,7 +17,7 @@ export default class extends PureComponent {
     return (
       <Fragment>
         <View style={styles.container}>
-          <Image
+          {/* <Image
             onLoad={() =>
               selectedStory &&
               selectedStory.id === id &&
@@ -25,7 +25,7 @@ export default class extends PureComponent {
             }
             style={styles.image}
             {...{ source }}
-          />
+          /> */}
           <Avatar {...{ user, avatar }} />
         </View>
         {footerComponent && (
