@@ -96,7 +96,7 @@ export default class Stories extends PureComponent {
           }
         ]}
       >
-        <Text>{this.props.isOpen}</Text>
+        <Text>aaa{this.props.isOpen}</Text>
         {!ready && (
           <View
             style={{
