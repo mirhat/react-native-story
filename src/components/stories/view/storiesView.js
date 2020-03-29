@@ -89,7 +89,10 @@ export default class Stories extends PureComponent {
       <View
         style={[
           styles.container,
-          { height: this.props.isOpen ? Dimensions.get("window").height : 50 }
+          {
+            height: this.props.isOpen ? Dimensions.get("window").height : 50,
+            backgroundColor: "red"
+          }
         ]}
       >
         {!ready && (
