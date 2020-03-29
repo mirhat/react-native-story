@@ -5,7 +5,7 @@ export default StyleSheet.create({
   mainContainer: {
     flex: 1,
     flexDirection: "column",
-    justifyContent: "space-between"
+    justifyContent: "flex-end"
   },
   container: {
     flex: 1
